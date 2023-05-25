@@ -1,0 +1,21 @@
+# MongoDB data directory
+data/
+
+# MongoDB log files
+logs/
+
+# MongoDB WiredTiger log files
+WiredTigerLog*
+
+# MongoDB configuration file
+mongod.conf
+
+# MongoDB backup and restore files
+*.backup
+*.dump
+*.out
+
+# Ignore all files in the "data" directory
+data/*
+
+node_modules/
