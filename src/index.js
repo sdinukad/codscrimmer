@@ -3,7 +3,7 @@ const app = express()
 const path = require("path")
 const hbs = require("hbs")
 const collection=require("./mongodb")
-
+const PORT = process.env.PORT || 3030; //https://www.freecodecamp.org/news/how-to-deploy-nodejs-application-with-render/
 const templatePath=path.join(__dirname,'../templates')
 
 // Specify the path to the public directory
@@ -53,6 +53,6 @@ app.post("/login",async (req,res)=>{
     
 })
 
-app.listen(3000, ()=>{
-    console.log("port connected 3000");
+app.listen(PORT, ()=>{
+    console.log("server started on ${PORT}");
 })
