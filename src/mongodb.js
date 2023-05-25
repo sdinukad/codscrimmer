@@ -1,10 +1,12 @@
+require("dotenv").config(); // Load environment variables from .env file
+
 const mongoose = require("mongoose");
 
-// Replace <password> with the actual password for the dinukadangampala user
-const password = encodeURIComponent("zz_r-n@SPj7FQXC");
+const username = process.env.USERNAME;
+const password = process.env.PASSWORD;
 
 // Replace <your-atlas-connection-string> with the connection string from MongoDB Atlas
-const uri = `mongodb+srv://dinukadangampala:${password}@cluster0.2ybzcsx.mongodb.net/test?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${username}:${encodeURIComponent(password)}@cluster0.2ybzcsx.mongodb.net/test?retryWrites=true&w=majority`;
 
 
 mongoose

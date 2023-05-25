@@ -19,3 +19,4 @@ mongod.conf
 data/*
 
 node_modules/
+.env
