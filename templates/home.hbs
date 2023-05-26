@@ -4,12 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home - CodScrimmer</title>
     <link rel="stylesheet" href="/home.css">
 </head>
 <body>
-    
-    <h1>Home</h1>
-    
+    <header>
+        <h1>CodScrimmer</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/create">Create Lobby</a></li>
+                <li><a href="/join">Join Lobby</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="lobby-list">
+            <h2>Active Lobbies</h2>
+            <ul>
+                <li>
+                    <div class="lobby-info">
+                        <h3>Lobby 1</h3>
+                        <p>Host: Player1</p>
+                        <p>Players: 3/8</p>
+                    </div>
+                    <div class="lobby-actions">
+                        <a href="/lobby/1">Join</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="lobby-info">
+                        <h3>Lobby 2</h3>
+                        <p>Host: Player2</p>
+                        <p>Players: 7/8</p>
+                    </div>
+                    <div class="lobby-actions">
+                        <a href="/lobby/2">Join</a>
+                    </div>
+                </li>
+                <!-- Add more lobby entries as needed -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 CodScrimmer. All rights reserved.</p>
+    </footer>
 </body>
 </html>

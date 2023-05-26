@@ -1,49 +1,91 @@
 /* CSS for login.hbs */
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-  }
-  
-  h2 {
-    text-align: center;
-    color: #333;
-    padding: 20px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px auto;
-    max-width: 300px;
-  }
-  
-  input[type="text"],
-  input[type="password"] {
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  input[type="submit"] {
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #555;
-  }
-  
-  a {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-    color: #333;
-    text-decoration: none;
-  }
-  
+  font-family: 'Barlow', Arial, sans-serif;
+  background: linear-gradient(to bottom, #000, #111, #000);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #000;
+}
+
+
+.header {
+  background-color: #000;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.header p {
+  margin: 10px 0 0;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #111;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.login-container h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #000;
+  color: #fff;
+}
+
+.login-container input[type="submit"] {
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.login-container input[type="submit"]:hover {
+  background-color: #333;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-link a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+  border: none;
+}
+
+.signup-link a:hover {
+  background-color: #333;
+}
+
